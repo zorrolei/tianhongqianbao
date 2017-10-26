@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 消息管理</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>系统管理</li>
+                <li><strong>消息管理</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <form action="">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <p class="form-control-static">按时间筛选</p>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-daterange input-group">
+                                <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                                <span class="input-group-addon">至</span>
+                                <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-control-static"> 按接收人筛选</p>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option selected="" value="所有人">所有人</option>
+                                <option value="所有普通用户">所有普通用户</option>
+                                <option value="所有高级用户">所有高级用户</option>
+                                <option value="所有钻石用户">所有钻石用户</option>
+                                <option value="所有代理商">所有代理商</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <p class="form-control-static"> 操作人账号筛选</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" placeholder="请输入账号">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary no-margins">搜索</button>
+                        </div>
+                    </div>
+
+
+
+
+                </form>
+            </div>
+        </div>
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <div class="example">
+                    <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+                        <button type="button" class="btn btn-primary btn-outline submit-button" data-toggle="modal" data-target="#myModal4">
+                            添加新消息
+                        </button>
+                    </div>
+                    <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
+                        <thead>
+                            <tr>
+                                <th data-field="col-01" class="text-center">消息名称</th>
+                                <th data-field="col-02" class="text-center">消息发送时间</th>
+                                <th data-field="col-03" class="text-center">消息内容</th>
+                                <th data-field="col-04" class="text-center">操作人账号</th>
+                                <th data-field="col-05" class="text-center">接收人</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+                            <tr>
+                                <td>测试消息标题</td>
+                                <td>2017-10-10</td>
+                                <td>在在在在在在在在在在在在在在在在在在在在</td>
+                                <td>84651321</td>
+                                <td>全部分销商</td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹窗-->
+    <div class="modal inmodal" id="myModal4" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">添加新消息</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">消息标题</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入消息标题">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">接收人</label>
+                            <div class="col-sm-3">
+                                <select name="" id="" class="form-control">
+                                    <option selected="" value="所有人">所有人</option>
+                                    <option value="所有普通用户">所有普通用户</option>
+                                    <option value="所有高级用户">所有高级用户</option>
+                                    <option value="所有钻石用户">所有钻石用户</option>
+                                    <option value="所有代理商">所有代理商</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">消息内容</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" id="inputEmail3" placeholder="请输入消息内容"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><button type="button" class="btn btn-primary btn-lg" style="width: 60%;">发送</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Data picker -->
+    <script src="js/plugins/datetimepicker/datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/datetimepicker/datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#exampleTableToolbar').bootstrapTable({
+                showColumns: true,
+                toolbar: '#exampleToolbar',
+                iconSize: 'outline',
+                icons: {
+                    columns: 'glyphicon-list'
+                },
+                pagination:true,
+                sidePagination:'client',
+                pageNumber:1,
+                pageSize:30
+            });
+
+            $('.datetimepicker2').datetimepicker({
+                format: 'yyyy-mm-dd',
+                autoclose:true,
+                todayBtn:'linked',
+                language:'zh-CN',
+                minView:2
+            });
+
+
+        });
+    </script>
+
+
+</body>
+
+</html>

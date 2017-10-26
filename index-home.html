@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 首页</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>今日新增用户</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">10000</h1>
+                        <small class="text-info">人</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>今日普通收款T1(元)</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">275,800</h1>
+                        <small class="text-info">2000笔</small>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>今日快速收款T0(元)</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">275,800</h1>
+                        <small class="text-info">2000笔</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>佣金账户总余额</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <h1 class="no-margins">275,800.00</h1>
+                        <small class="text-info">元</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>用户流水分布图</h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div style="height:600px" id="echarts-map-chart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>代理商排行榜（月）</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
+                            <thead>
+                                <tr>
+                                    <th data-field="col-01" class="text-center">排行</th>
+                                    <th data-field="col-02" class="text-center">编号</th>
+                                    <th data-field="col-03" class="text-center">姓名</th>
+                                    <th data-field="col-04" class="text-center">账号</th>
+                                    <th data-field="col-05" class="text-center">旗下付款总流水</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>98456394</td>
+                                    <td>张三</td>
+                                    <td>13948756985</td>
+                                    <td>1150</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+
+
+    <!-- ECharts -->
+    <script src="js/plugins/echarts/echarts-all.js"></script>
+    <!-- ECharts demo data -->
+    <script src="js/demo/echarts-demo.js"></script>
+
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#exampleTableToolbar').bootstrapTable({
+                showColumns: false,
+                toolbar: '#exampleToolbar',
+                iconSize: 'outline',
+                icons: {
+                    columns: 'glyphicon-list'
+                },
+                pagination:false,
+                sidePagination:'client',
+                pageNumber:1,
+                pageSize:10,
+                showFooter:false
+            });
+
+
+        });
+    </script>
+
+</body>
+
+</html>

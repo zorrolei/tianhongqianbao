@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 身份等级权益</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>系统管理</li>
+                <li><strong>身份等级权益</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <h2 class="text-center">天宏钱包身份等级权益</h2>
+
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+
+                        <textarea class="form-control" rows="10">
+1、购买成功即可享受对应身份的刷卡费率和旗下用户分润收益。
+身份收益说明：
+钻石用户旗下普通用户：6元/万刷卡佣金
+钻石用户旗下高级用户：3元/万刷卡佣金
+钻石用户旗下高级用户的普通用户：3元/万刷卡佣金
+2、身份一经购买，终身有效，费用概不退回。
+                        </textarea>
+                    </div>
+
+                </div>
+                <button class="btn btn-primary center-block" style="margin-top: 20px;">修改</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.online-button').click(function () {
+                swal({
+                        title: "广告上线",
+                        text: "确定上线这条广告吗",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#23C6CA",
+                        confirmButtonText: "确定上线",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("上线成功", "广告上线成功", "success");
+                    });
+            });
+
+
+        });
+    </script>
+
+
+</body>
+
+</html>

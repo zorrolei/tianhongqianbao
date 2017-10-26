@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 管理员角色设置</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>系统管理</li>
+                <li>管理员设置</li>
+                <li><strong>管理员角色设置</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <div class="example">
+                    <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+                        <a class="btn btn-primary btn-outline submit-button" data-toggle="modal" data-target="#myModal5">
+                            添加管理员角色
+                        </a>
+                    </div>
+                    <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
+                        <thead>
+                            <tr>
+                                <th data-field="col-01" class="text-center">管理员角色</th>
+                                <th data-field="col-02" class="text-center">权限配置</th>
+                                <th data-field="col-03" class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>超级管理员</td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal4">权限配置</a></td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal6">修改角色名称</a></td>
+                            </tr>
+                            <tr>
+                                <td>高级管理员</td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal4">权限配置</a></td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal6">修改角色名称</a></td>
+                            </tr>
+                            <tr>
+                                <td>中级管理员</td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal4">权限配置</a></td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal6">修改角色名称</a></td>
+                            </tr>
+                            <tr>
+                                <td>普通管理员</td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal4">权限配置</a></td>
+                                <td><a href="#" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal6">修改角色名称</a></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--弹窗-->
+    <div class="modal inmodal" id="myModal4" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">配置权限</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="checkbox">
+                        <input id="checkbox1" type="checkbox">
+                        <label for="checkbox1"><strong>所有权限</strong></label>
+                    </div>
+                    <hr>
+                    <div class="checkbox">
+                        <input id="checkbox2" type="checkbox">
+                        <label for="checkbox2"><strong>系统设置(全选)</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox3" type="checkbox">
+                                <label for="checkbox3">查看消息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox4" type="checkbox">
+                                <label for="checkbox4">发送新消息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox5" type="checkbox">
+                                <label for="checkbox5">数据导出权限</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox6" type="checkbox">
+                                <label for="checkbox6">查看公告</label>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox7" type="checkbox">
+                                <label for="checkbox7">发布新公告</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox8" type="checkbox">
+                                <label for="checkbox8">删除公告</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox9" type="checkbox">
+                                <label for="checkbox9">查看广告位</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox10" type="checkbox">
+                                <label for="checkbox10">编辑广告位</label>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox11" type="checkbox">
+                                <label for="checkbox11">添加管理员</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox12" type="checkbox">
+                                <label for="checkbox12">管理员操作</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox13" type="checkbox">
+                                <label for="checkbox13">管理员角色权限</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox14" type="checkbox">
+                                <label for="checkbox14">查看操作日志</label>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs-block"></div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox15" type="checkbox">
+                                <label for="checkbox15">修改身份等级权益</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox16" type="checkbox">
+                                <label for="checkbox16">修改分享设置</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="checkbox">
+                                <input id="checkbox17" type="checkbox">
+                                <label for="checkbox17">修改常见问题</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="checkbox">
+                        <input id="checkbox18" type="checkbox">
+                        <label for="checkbox18"><strong>用户管理(全选)</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox19" type="checkbox">
+                                <label for="checkbox19">查看用户账号信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox20" type="checkbox">
+                                <label for="checkbox20">修改用户身份</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox21" type="checkbox">
+                                <label for="checkbox21">设置用户账号状态、重置密码</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox22" type="checkbox">
+                                <label for="checkbox22">添加代理商</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox23" type="checkbox">
+                                <label for="checkbox23">查看信用卡信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox24" type="checkbox">
+                                <label for="checkbox24">设置信用卡状态</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox25" type="checkbox">
+                                <label for="checkbox25">查看用户身份等级信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox26" type="checkbox">
+                                <label for="checkbox26">查看费率详情</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox27" type="checkbox">
+                                <label for="checkbox27">修改费率</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox28" type="checkbox">
+                                <label for="checkbox28">查看实名认证审核</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox29" type="checkbox">
+                                <label for="checkbox29">实名认证审核操作</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox30" type="checkbox">
+                                <label for="checkbox30">查看储蓄卡绑定审核</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox31" type="checkbox">
+                                <label for="checkbox31">储蓄卡绑定审核操作</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox32" type="checkbox">
+                                <label for="checkbox32">数据导出权限</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="checkbox">
+                        <input id="checkbox33" type="checkbox">
+                        <label for="checkbox33"><strong>订单管理(全选)</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox34" type="checkbox">
+                                <label for="checkbox34">查看收款订单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox35" type="checkbox">
+                                <label for="checkbox35">查看身份购买订单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox36" type="checkbox">
+                                <label for="checkbox36">数据导出权限</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="checkbox">
+                        <input id="checkbox37" type="checkbox">
+                        <label for="checkbox37"><strong>掉单管理(全选)</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox38" type="checkbox">
+                                <label for="checkbox38">查看平台代付掉单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox39" type="checkbox">
+                                <label for="checkbox39">操作平台代付掉单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox40" type="checkbox">
+                                <label for="checkbox40">查看身份购买掉单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox41" type="checkbox">
+                                <label for="checkbox41">操作身份购买掉单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox42" type="checkbox">
+                                <label for="checkbox42">查看提现掉单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox43" type="checkbox">
+                                <label for="checkbox43">操作提现掉单信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox44" type="checkbox">
+                                <label for="checkbox44">数据导出权限</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="checkbox">
+                        <input id="checkbox45" type="checkbox">
+                        <label for="checkbox45"><strong>资金管理(全选)</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox46" type="checkbox">
+                                <label for="checkbox46">查看提现审核信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox47" type="checkbox">
+                                <label for="checkbox47">操作提现审核信息</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox48" type="checkbox">
+                                <label for="checkbox48">查看购买身份佣金明细</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox49" type="checkbox">
+                                <label for="checkbox49">查看收款佣金结算明细</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox50" type="checkbox">
+                                <label for="checkbox50">查看佣金账户资金流动统计</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="checkbox">
+                        <input id="checkbox45" type="checkbox">
+                        <label for="checkbox45"><strong>数据统计(全选)</strong></label>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox46" type="checkbox">
+                                <label for="checkbox46">查看数据统计</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="checkbox">
+                                <input id="checkbox47" type="checkbox">
+                                <label for="checkbox47">数据导出权限</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><button type="button" class="btn btn-primary btn-lg" style="width: 60%;">确定</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--修改角色名称-->
+    <div class="modal inmodal" id="myModal6" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">修改角色名</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">角色名</label>
+                            <div class="col-sm-9">
+                                <p class="form-control-static">超级管理员</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">新角色名</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入新角色名">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><button type="button" class="btn btn-primary btn-lg" style="width: 60%;">确定</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--添加管理员-->
+    <div class="modal inmodal" id="myModal5" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">添加管理员</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">管理员名称</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入管理员名称">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><button type="button" class="btn btn-primary btn-lg" style="width: 60%;">确定</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#exampleTableToolbar').bootstrapTable({
+                showColumns: true,
+                toolbar: '#exampleToolbar',
+                iconSize: 'outline',
+                icons: {
+                    columns: 'glyphicon-list'
+                },
+                pagination:true,
+                sidePagination:'client',
+                pageNumber:1,
+                pageSize:30
+            });
+
+            $('.outline-button').click(function () {
+                swal({
+                        title: "停用账号",
+                        text: "确定停用这个账号吗",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定停用",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("停用成功", "账号停用成功", "success");
+                    });
+            });
+            $('.online-button').click(function () {
+                swal({
+                        title: "启用账号",
+                        text: "确定启用这个账号吗",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#23C6CA",
+                        confirmButtonText: "确定启用",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("启用成功", "账号启用成功", "success");
+                    });
+            });
+
+
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 添加代理商</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/plugins/webuploader/webuploader.css">
+    <link rel="stylesheet" type="text/css" href="css/demo/webuploader-demo.css">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>用户管理</li>
+                <li>用户账号</li>
+                <li><strong>添加代理商</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <div class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">账号</label>
+                        <div class="col-sm-4">
+                            <input id="inputEmail3" type="text" class="form-control" placeholder="请输入代理商账号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">密码</label>
+                        <div class="col-sm-4">
+                            <input id="inputEmail3" type="text" class="form-control" placeholder="请输入代理商密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">姓名</label>
+                        <div class="col-sm-4">
+                            <input id="inputEmail3" type="text" class="form-control" placeholder="请输入代理商姓名">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">身份证号</label>
+                        <div class="col-sm-4">
+                            <input id="inputEmail3" type="text" class="form-control" placeholder="请输入代理商身份证号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">开户银行</label>
+                        <div class="col-sm-4">
+                            <select name="" id="" class="form-control">
+                                <option value="全部">全部</option>
+                                <option value="中国工商银行">中国工商银行</option>
+                                <option value="中国银行">中国银行</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">开户地区</label>
+                        <div class="col-sm-6 form-inline">
+                            <div id="distpicker2">
+                                <select class="form-control"></select>
+                                <select class="form-control"></select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">银行卡号</label>
+                        <div class="col-sm-4">
+                            <input id="inputEmail3" type="text" class="form-control" placeholder="请输入银行卡号">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <!--图片上传-->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <!--dom结构部分-->
+                                <div class="queueList">
+                                <div id="uploader-demo">
+                                    <!--用来存放item-->
+                                    <div id="fileList" class="uploader-list"></div>
+                                    <div id="filePicker">选择图片</div>
+                                </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- distpicker -->
+    <script src="js/plugins/distpicker/distpicker.data.min.js"></script>
+    <script src="js/plugins/distpicker/distpicker.min.js"></script>
+
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <!-- Web Uploader -->
+    <script type="text/javascript">
+        // 添加全局站点信息
+        var BASE_URL = 'js/plugins/webuploader';
+    </script>
+    <script src="js/plugins/webuploader/webuploader.min.js"></script>
+
+    <script src="js/demo/webuploader-demo2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#distpicker2").distpicker({
+                autoSelect: false
+            });
+
+            $('.freeze-button').click(function () {
+                swal({
+                        title: "冻结账号",
+                        text: "是否冻结此账号",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("冻结成功", "账号冻结成功", "success");
+                    });
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>天宏钱包 - 主页</title>
+
+    <!--[if lt IE 9]>
+
+    <![endif]-->
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+    <script>
+        if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE",""))<9){
+            var d = document.createElement("div");
+            d.className = "browsehappy";
+            d.innerHTML = '<div style="width:100%;height:900px;font-size:20px;line-height:500px;text-align:center;background-color:#000;color:#fff; position:absolute;z-index:9999;-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);">您的浏览器版本太低了,为了您的用户体验请 <a target="_blank" href="https://www.microsoft.com/zh-cn/download/internet-explorer.aspx" class="btn btn-primary">立即升级</a></div>';
+            var f = function(){
+                var s = document.getElementsByTagName("body")[0];
+                if("undefined" == typeof(s)){
+                    setTimeout(f, 10)
+                } else {
+                    s.insertBefore(d, s.firstChild)
+                }
+            };
+            f()
+        }
+    </script>
+</head>
+
+<body class="fixed-sidebar full-height-layout gray-bg" style="overflow:hidden">
+    <div id="wrapper">
+        <!--左侧导航开始-->
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="nav-close"><i class="fa fa-times-circle"></i>
+            </div>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element">
+                            <!--<span><img alt="image" class="img-circle" src="img/profile_small.jpg" /></span>-->
+                            <h1 class="logo-wrapper">天宏钱包</h1>
+                        </div>
+                        <div class="logo-element">天宏
+                        </div>
+                    </li>
+                </ul>
+                <!--左侧菜单-->
+                <div class="panel-group nav-sidemenu navbar-static-side" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="J_menuItem" href="index-home.html">
+                                    <i class="fa fa-home"></i>
+                                    <span class="nav-label">首页</span>
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fa fa-cogs"></i>
+                                    <span class="nav-label">系统管理</span>
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-news.html">消息管理</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-notice.html">公告管理</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-adv.html">广告位管理</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-admin.html">管理员设置</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-admin-log.html">管理员操作日志</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-level-interest.html">身份等级权益</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-question.html">常见问题</a>
+                                    </li>
+                                    <li>
+                                        <a class="J_menuItem" href="sys-promotion.html">推广管理</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fa fa-user"></i>
+                                    <span class="nav-label">用户管理</span>
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a class="J_menuItem" href="user-account.html">用户账号</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="order-cardTypeList.html">信用卡管理</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="order-insteadPayList.html">身份等级管理</a></li>
+                                    <li><a class="J_menuItem" href="order-reissuePayList.html">费率管理</a></li>
+                                    <li><a class="J_menuItem" href="order-reissuePayList.html">实名认证审核</a></li>
+                                    <li><a class="J_menuItem" href="order-reissuePayList.html">储蓄卡绑定审核</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fa fa-reorder"></i>
+                                    <span class="nav-label">订单管理</span>
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a class="J_menuItem" href="finance-balance.html">收款订单</a></li>
+                                    <li><a class="J_menuItem" href="finance-balanceChangeList.html">身份购买</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <i class="fa fa-warning"></i>
+                                    <span class="nav-label">掉单处理</span>
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a class="J_menuItem" href="cash-addBankCard.html">平台收款掉单</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="cash-managementBankCard.html">平台代付掉单</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="cash-applyForCash.html">身份购买掉单</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="cash-cashingList.html">提现掉单</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <i class="fa fa-money"></i>
+                                    <span class="nav-label">资金管理</span>
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a class="J_menuItem" href="transfer-toBankCard.html">提现申请</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="transfer-transferLog.html">购买身份分佣明细</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="transfer-commonAccount.html">收款佣金结算明细</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="transfer-commonAccount.html">用户余额变动明细</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <i class="fa fa fa-bar-chart-o"></i>
+                                    <span class="nav-label">统计数据</span>
+                                    <span class="fa fa-angle-right"></span>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <ul>
+                                    <li><a class="J_menuItem" href="statistics-income.html">用户统计</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="statistics-dailySettlement.html">收款交易统计</a>
+                                    </li>
+                                    <li><a class="J_menuItem" href="statistics-dailySettlement.html">提现统计</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--左侧菜单-->
+            </div>
+        </nav>
+        <!--左侧导航结束-->
+        <!--右侧部分开始-->
+        <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top " role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header"><a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a></div>
+
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li><span class="text-danger">管理员845121</span></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-edit"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            修改登录密码
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                <i class="fa fa-bell"></i> <span class="label label-primary">2</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            您有16条未读消息
+                                            <span class="pull-right text-muted small">4分钟前</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            3条新回复
+                                            <span class="pull-right text-muted small">12分钟钱</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row content-tabs">
+                <button class="roll-nav roll-left J_tabLeft"><i class="fa fa-backward"></i>
+                </button>
+                <nav class="page-tabs J_menuTabs">
+                    <div class="page-tabs-content">
+                        <a href="javascript:;" class="active J_menuTab" data-id="index-home.html">首页</a>
+                    </div>
+                </nav>
+                <button class="roll-nav roll-right J_tabRight"><i class="fa fa-forward"></i>
+                </button>
+                <div class="btn-group roll-nav roll-right">
+                    <button class="dropdown J_tabClose" data-toggle="dropdown">关闭操作<span class="caret"></span></button>
+                    <ul role="menu" class="dropdown-menu dropdown-menu-right">
+                        <li class="J_tabShowActive"><a>定位当前选项卡</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="J_tabCloseAll"><a>关闭全部选项卡</a>
+                        </li>
+                        <li class="J_tabCloseOther"><a>关闭其他选项卡</a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="login.html" class="roll-nav roll-right J_tabExit"><i class="fa fa fa-sign-out"></i> 退出</a>
+            </div>
+            <div class="row J_mainContent" id="content-main">
+                <iframe class="J_iframe" name="iframe0" width="100%" height="100%" src="index-home.html" frameborder="0" data-id="index-home.html" seamless></iframe>
+            </div>
+            <div class="footer">
+                <div class="pull-right">&copy; 2017 Copyright
+                </div>
+            </div>
+        </div>
+        <!--右侧部分结束-->
+
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/layer/layer.min.js"></script>
+
+    <!-- 自定义js -->
+    <script src="js/global.js?v=4.1.0"></script>
+    <script type="text/javascript" src="js/contabs.js"></script>
+
+
+
+</body>
+
+</html>
