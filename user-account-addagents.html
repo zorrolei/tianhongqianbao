@@ -115,7 +115,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-sm-offset-3 col-sm-2">
-                            <button type="submit" class="btn btn-primary btn-block">添加</button>
+                            <button type="submit" class="btn btn-primary btn-block add-button">添加</button>
                         </div>
                     </div>
 
@@ -149,19 +149,19 @@
                 autoSelect: false
             });
 
-            $('.freeze-button').click(function () {
+            $('.add-button').click(function () {
                 swal({
-                        title: "冻结账号",
-                        text: "是否冻结此账号",
+                        title: "添加代理商",
+                        text: "是否添加此代理商",
                         type: "warning",
                         showCancelButton: true,
                         cancelButtonText: "取消",
-                        confirmButtonColor: "#DD6B55",
+                        confirmButtonColor: "#23C6CA",
                         confirmButtonText: "确定",
                         closeOnConfirm: false
                     },
                     function(){
-                        swal("冻结成功", "账号冻结成功", "success");
+                        swal("添加成功", "代理商添加成功", "success");
                     });
             });
 
