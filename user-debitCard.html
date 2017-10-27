@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>天宏钱包 - 实名认证审核</title>
+    <title>天宏钱包 - 储蓄卡绑定审核</title>
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
@@ -26,7 +26,7 @@
             <ol class="breadcrumb">
                 <li>首页</li>
                 <li>用户管理</li>
-                <li><strong>实名认证审核</strong></li>
+                <li><strong>储蓄卡绑定审核</strong></li>
             </ol>
         </div>
         <div class="col-sm-6">
@@ -42,10 +42,12 @@
                     <div class="form-inline">
                         <div class="form-group">
                             <select name="" id="" class="form-control">
+                                <option value="请选择查询条件">请选择查询条件</option>
                                 <option value="用户编号">用户编号</option>
-                                <option value="用户姓名">用户姓名</option>
                                 <option value="用户账号">用户账号</option>
-                                <option value="身份账号">身份账号</option>
+                                <option value="开户行">开户行</option>
+                                <option value="银行卡号">银行卡号</option>
+                            </select>
                             </select>
                         </div>
                         <div class="form-group">
@@ -93,33 +95,41 @@
         <div class="ibox float-e-margins">
             <div class="ibox-content">
                 <div class="example">
-                    <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+                    <div class="hidden-xs" id="exampleToolbar" role="group">
                         <a href="#" class="btn btn-primary btn-outline">
                             导出EXCEL
+                        </a>
+                        <a href="#" class="btn btn-primary">
+                            <i class="fa fa-refresh"></i>
+                            转换为自动审核
                         </a>
                     </div>
                     <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
                         <thead>
                             <tr>
                                 <th data-field="col-01" class="text-center">用户编号</th>
-                                <th data-field="col-02" class="text-center">用户姓名</th>
-                                <th data-field="col-03" class="text-center">用户账号</th>
-                                <th data-field="col-04" class="text-center">身份证号</th>
-                                <th data-field="col-05" class="text-center">提交时间</th>
-                                <th data-field="col-06" class="text-center">审核时间</th>
-                                <th data-field="col-07" class="text-center">上传证件</th>
-                                <th data-field="col-08" class="text-center">审核状态</th>
-                                <th data-field="col-09" class="text-center">操作</th>
-                                <th data-field="col-10" class="text-center">备注</th>
-                                <th data-field="col-11" class="text-center">操作人账号</th>
+                                <th data-field="col-02" class="text-center">用户账号</th>
+                                <th data-field="col-03" class="text-center">开户行</th>
+                                <th data-field="col-04" class="text-center">开户省</th>
+                                <th data-field="col-05" class="text-center">开户市</th>
+                                <th data-field="col-06" class="text-center">银行卡号</th>
+                                <th data-field="col-07" class="text-center">提交时间</th>
+                                <th data-field="col-08" class="text-center">审核时间</th>
+                                <th data-field="col-09" class="text-center">上传证件</th>
+                                <th data-field="col-10" class="text-center">审核状态</th>
+                                <th data-field="col-11" class="text-center">操作</th>
+                                <th data-field="col-12" class="text-center">备注</th>
+                                <th data-field="col-13" class="text-center">操作人账号</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>001</td>
-                                <td>安干事</td>
                                 <td>13947123698</td>
-                                <td>152213199911112222</td>
+                                <td>中国银行</td>
+                                <td>河北</td>
+                                <td>石家庄</td>
+                                <td>9854134684513146153131</td>
                                 <td>2017-8-6<br>24:15:24</td>
                                 <td>2017-8-6<br>24:15:24</td>
                                 <td>
@@ -232,7 +242,7 @@
                         swal("审核成功", "实名认证审核成功", "success");
                     });
             });
-
+  
 
         });
     </script>
