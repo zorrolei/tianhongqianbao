@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 费率管理</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>用户管理</li>
+                <li><strong>费率管理</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <h2>流水佣金费率设置</h2>
+                <div class="example">
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th width="33%"></th>
+                                <th width="33%">普通收款（T1%）</th>
+                                <th width="33%">快速收款（T0%）</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>普通用户</td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.48" disabled="true"></td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.48" disabled="true"></td>
+                            </tr>
+                            <tr>
+                                <td>高级用户</td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.45" disabled="true"></td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.45" disabled="true"></td>
+                            </tr>
+                            <tr>
+                                <td>钻石用户</td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.42" disabled="true"></td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.42" disabled="true"></td>
+                            </tr>
+                            <tr>
+                                <td>代理商</td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.38" disabled="true"></td>
+                                <td><input type="text" class="form-control text-center input-liushui" value="0.38" disabled="true"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="text-center margin-top">
+                        <a href="#" class="btn btn-primary editLiushui">修改费率</a>
+                        <a href="#" class="btn btn-primary save-button" style="display: none;">保存</a>
+                        <a href="#" class="btn btn-primary canel_button" style="display: none;">取消</a>
+                    </div>
+                </div>
+                <hr>
+                <h2 style="margin-top: 30px;">每笔交易额外增收手续费（元）</h2>
+                <table class="table table-bordered text-center">
+
+                        <tr>
+                            <td width="50%">快速收款（T0%）</td>
+                            <td width="50%"><input type="text" class="form-control text-center input-liushui" value="2" disabled="true"></td>
+                        </tr>
+
+                </table>
+                <div class="text-center">
+                    <button class="btn btn-primary no-margins">修改手续费</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <h2>购买身份分拥比例设置</h2>
+                <table class="table table-bordered text-center">
+
+                    <tr>
+                        <td width="50%">购买会员的直属上级分</td>
+                        <td width="50%"><input type="text" class="form-control text-center input-liushui" value="35%" disabled="true"></td>
+                    </tr>
+                    <tr>
+                        <td>该会员所属代理商分</td>
+                        <td><input type="text" class="form-control text-center input-liushui" value="65%" disabled="true"></td>
+                    </tr>
+
+                </table>
+                <div class="text-center">
+                    <button class="btn btn-primary no-margins">修改费率</button>
+                </div>
+            </div>
+        </div>
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <h2>佣金账户提现费率设置</h2>
+                <table class="table table-bordered text-center">
+
+                    <tr>
+                        <td width="50%">佣金账户提现费率</td>
+                        <td width="50%"><input type="text" class="form-control text-center input-liushui" value="0.6%" disabled="true"></td>
+                    </tr>
+
+                </table>
+                <div class="text-center">
+                    <button class="btn btn-primary no-margins">修改费率</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.editLiushui').click(function(){
+                $('.input-liushui').attr('disabled',false)
+                $('.save-button,.canel_button').toggle();
+                $(this).toggle();
+            })
+            $('.canel_button').click(function(){
+                $('.input-liushui').attr('disabled',true)
+                $('.save-button,.editLiushui').toggle();
+                $(this).toggle();
+            })
+            $('.save-button').click(function(){
+                console.log('asdf')
+                $('.input-liushui').attr('disabled',true)
+                $('.canel_button,.editLiushui').toggle();
+                $(this).toggle();
+            })
+
+
+
+
+
+            $('.enabled-button').click(function () {
+                swal({
+                        title: "启用信用卡",
+                        text: "是否启用此信用卡",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#23c6c8",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("启用成功", "信用卡启用成功", "success");
+                    });
+            });
+            $('.disabled-button').click(function () {
+                swal({
+                        title: "禁用信用卡",
+                        text: "是否禁用此信用卡",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("禁用成功", "信用卡禁用成功", "success");
+                    });
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

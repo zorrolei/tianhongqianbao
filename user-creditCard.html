@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 信用卡管理</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>用户管理</li>
+                <li><strong>信用卡管理</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <form action="">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="用户编号">用户编号</option>
+                                <option value="用户姓名">用户姓名</option>
+                                <option selected="" value="请选择查询条件">请选择查询条件</option>
+                                <option value="用户账号">用户账号</option>
+                                <option value="身份证号">身份证号</option>
+                                <option value="信用卡有效期">信用卡有效期</option>
+                                <option value="信用卡卡号">信用卡卡号</option>
+                                <option value="CVV2">CVV2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" placeholder="请输入搜索关键字">
+                        </div>
+                        <div class="form-group">
+                            <p class="form-control-static"> 信用卡状态</p>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="启用">启用</option>
+                                <option value="停用">停用</option>
+                                <option selected="" value="全部">全部</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary no-margins">搜索</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <div class="example">
+                    <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+                        <a href="#" class="btn btn-primary btn-outline submit-button">
+                            导出EXCEL
+                        </a>
+                    </div>
+                    <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
+                        <thead>
+                            <tr>
+                                <th data-field="col-01" class="text-center">用户编号</th>
+                                <th data-field="col-02" class="text-center">用户姓名</th>
+                                <th data-field="col-03" class="text-center">用户账号</th>
+                                <th data-field="col-04" class="text-center">银行卡名称</th>
+                                <th data-field="col-05" class="text-center">身份证号</th>
+                                <th data-field="col-06" class="text-center">信用卡有效期</th>
+                                <th data-field="col-07" class="text-center">信用卡卡号</th>
+                                <th data-field="col-08" class="text-center">CVV2</th>
+                                <th data-field="col-09" class="text-center">信用卡卡状态</th>
+                                <th data-field="col-10" class="text-center">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>001</td>
+                                <td>A1</td>
+                                <td>32132132132131</td>
+                                <td>中国银行</td>
+                                <td>894135165814358616856</td>
+                                <td>08/22</td>
+                                <td>62122060200025258412</td>
+                                <td>357</td>
+                                <td>启用</td>
+                                <td>
+                                    <a href="#" class="btn btn-primary btn-sm enabled-button">启用</a>
+                                    <a href="#" class="btn btn-danger btn-sm disabled-button">停用</a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#exampleTableToolbar').bootstrapTable({
+                showColumns: true,
+                toolbar: '#exampleToolbar',
+                iconSize: 'outline',
+                icons: {
+                    columns: 'glyphicon-list'
+                },
+                pagination:true,
+                sidePagination:'client',
+                pageNumber:1,
+                pageSize:30
+            });
+
+
+
+            $('.enabled-button').click(function () {
+                swal({
+                        title: "启用信用卡",
+                        text: "是否启用此信用卡",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#23c6c8",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("启用成功", "信用卡启用成功", "success");
+                    });
+            });
+            $('.disabled-button').click(function () {
+                swal({
+                        title: "禁用信用卡",
+                        text: "是否禁用此信用卡",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("禁用成功", "信用卡禁用成功", "success");
+                    });
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 实名认证审核</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="js/plugins/fancybox/jquery.fancybox.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>用户管理</li>
+                <li><strong>实名认证审核</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <form action="">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="用户编号">用户编号</option>
+                                <option value="用户姓名">用户姓名</option>
+                                <option value="用户账号">用户账号</option>
+                                <option value="身份账号">身份账号</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" placeholder="请输入搜索关键字">
+                        </div>
+                        <div class="form-group">
+                            <p class="form-control-static">提交时间</p>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-daterange input-group">
+                                <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                                <span class="input-group-addon">至</span>
+                                <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-inline margin-top">
+                        <div class="form-group">
+                            <div id="distpicker2">
+                                <select class="form-control"></select>
+                                <select class="form-control"></select>
+                                <select class="form-control"></select>
+                            </div>
+                        </div>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static"> 审核状态</p>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="全部">全部</option>
+                                <option value="已审核">已审核</option>
+                                <option value="待审核">待审核</option>
+                                <option value="未通过">未通过</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary no-margins">搜索</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <div class="example">
+                    <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+                        <a href="#" class="btn btn-primary btn-outline">
+                            导出EXCEL
+                        </a>
+                    </div>
+                    <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
+                        <thead>
+                            <tr>
+                                <th data-field="col-01" class="text-center">用户编号</th>
+                                <th data-field="col-02" class="text-center">用户姓名</th>
+                                <th data-field="col-03" class="text-center">用户账号</th>
+                                <th data-field="col-04" class="text-center">身份证号</th>
+                                <th data-field="col-05" class="text-center">提交时间</th>
+                                <th data-field="col-06" class="text-center">审核时间</th>
+                                <th data-field="col-07" class="text-center">上传证件</th>
+                                <th data-field="col-08" class="text-center">审核状态</th>
+                                <th data-field="col-09" class="text-center">操作</th>
+                                <th data-field="col-10" class="text-center">备注</th>
+                                <th data-field="col-11" class="text-center">操作人账号</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>001</td>
+                                <td>安干事</td>
+                                <td>13947123698</td>
+                                <td>152213199911112222</td>
+                                <td>2017-8-6<br>24:15:24</td>
+                                <td>2017-8-6<br>24:15:24</td>
+                                <td>
+                                    <a class="fancybox" href="img/a4.jpg" title="身份证正面照片">
+                                        <img alt="image" src="img/a4.jpg" style="width: 60px;" />
+                                    </a>
+                                    <a class="fancybox" href="img/a4.jpg" title="身份证背面照片">
+                                        <img alt="image" src="img/a4.jpg" style="width: 60px;" />
+                                    </a>
+                                </td>
+                                <td>待审核</td>
+                                <td><a href="#" class="btn btn-primary btn-sm success-button">通过</a> <a href="#" class="btn btn-danger  btn-sm" data-toggle="modal" data-target="#myModal5">驳回</a></td>
+                                <td>照片不清晰照片不清晰</td>
+                                <td>asdfasdf</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--查看上级详情-->
+    <div class="modal inmodal" id="myModal5" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">驳回申请</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                    <p class="form-control-static">限20个字符</p>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><button class="btn btn-primary" style="width:40%">确定</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Data picker -->
+    <script src="js/plugins/datetimepicker/datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/datetimepicker/datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <!-- distpicker -->
+    <script src="js/plugins/distpicker/distpicker.data.min.js"></script>
+    <script src="js/plugins/distpicker/distpicker.min.js"></script>
+    <!-- Fancy box -->
+    <script src="js/plugins/fancybox/jquery.fancybox.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#exampleTableToolbar').bootstrapTable({
+                showColumns: true,
+                toolbar: '#exampleToolbar',
+                iconSize: 'outline',
+                icons: {
+                    columns: 'glyphicon-list'
+                },
+                pagination:true,
+                sidePagination:'client',
+                pageNumber:1,
+                pageSize:30
+            });
+
+            $("#distpicker2").distpicker({
+                autoSelect: false
+            });
+            $('.datetimepicker2').datetimepicker({
+                format: 'yyyy-mm-dd',
+                autoclose:true,
+                todayBtn:'linked',
+                language:'zh-CN',
+                minView:2
+            });
+
+            $('.fancybox').fancybox({
+                openEffect: 'none',
+                closeEffect: 'none'
+            });
+
+            $('.success-button').click(function () {
+                swal({
+                        title: "通过审核",
+                        text: "是否通过这条实名纪录",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#23c6c8",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("审核成功", "实名认证审核成功", "success");
+                    });
+            });
+  
+
+        });
+    </script>
+
+
+</body>
+
+</html>

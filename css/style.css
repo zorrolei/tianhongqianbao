@@ -7919,3 +7919,7 @@ margin-right: -5px;
 .mini-navbar .nav-sidemenu .panel-heading .fa-angle-right{ display:none;}
 
 .modal-header .close{ margin-top:-22px;}
+.margin-left{ margin-left:10px;}
+.margin-top{ margin-top:10px;}
+
+.modal-lg{ width:1100px;}
