@@ -17,12 +17,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-189">
-              <caret line="166" column="92" lean-forward="false" selection-start-line="166" selection-start-column="92" selection-end-line="166" selection-end-column="92" />
+            <state relative-caret-position="380">
+              <caret line="170" column="86" lean-forward="false" selection-start-line="170" selection-start-column="86" selection-end-line="170" selection-end-column="86" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1509346637000" expanded="true" signature="835:1099" ph="..." />
+                <marker date="1509349971000" expanded="true" signature="835:1099" ph="..." />
               </folding>
             </state>
           </provider>
@@ -249,8 +249,8 @@
       <file leaf-file-name="order-buyidentity-detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/order-buyidentity-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
+            <state relative-caret-position="469">
+              <caret line="89" column="24" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="89" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -286,11 +286,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="outOrder-insteadPay-detail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="outOrder-insteadPay-detail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/outOrder-insteadPay-detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="697">
               <caret line="181" column="15" lean-forward="false" selection-start-line="181" selection-start-column="15" selection-end-line="181" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outOrder-buyidentity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outOrder-buyidentity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="775">
+              <caret line="151" column="120" lean-forward="false" selection-start-line="151" selection-start-column="120" selection-end-line="151" selection-end-column="120" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outOrder-buyidentity-detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outOrder-buyidentity-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="90" column="29" lean-forward="true" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outOrder-cash.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outOrder-cash.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="861">
+              <caret line="117" column="113" lean-forward="false" selection-start-line="117" selection-start-column="113" selection-end-line="117" selection-end-column="113" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="outOrder-cash-detail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/outOrder-cash-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="85" column="24" lean-forward="false" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -453,10 +493,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/order-reissuePayList.html" />
-        <option value="$PROJECT_DIR$/statistics-dailySettlement.html" />
-        <option value="$PROJECT_DIR$/task-download.html" />
-        <option value="$PROJECT_DIR$/transfer-commonAccount.html" />
         <option value="$PROJECT_DIR$/transfer-toBankCard.html" />
         <option value="$PROJECT_DIR$/finance-balanceLiquidationList.html" />
         <option value="$PROJECT_DIR$/order-payList.html" />
@@ -500,10 +536,14 @@
         <option value="$PROJECT_DIR$/outOrder-receipt-detail.html" />
         <option value="$PROJECT_DIR$/order-buyidentity-detail.html" />
         <option value="$PROJECT_DIR$/order-receipt-detail.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/outOrder-receipt.html" />
         <option value="$PROJECT_DIR$/outOrder-insteadPay.html" />
         <option value="$PROJECT_DIR$/outOrder-insteadPay-detail.html" />
+        <option value="$PROJECT_DIR$/outOrder-buyidentity.html" />
+        <option value="$PROJECT_DIR$/outOrder-buyidentity-detail.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/outOrder-cash.html" />
+        <option value="$PROJECT_DIR$/outOrder-cash-detail.html" />
       </list>
     </option>
   </component>
@@ -629,12 +669,12 @@
       <workItem from="1509010603741" duration="1238000" />
       <workItem from="1509064104088" duration="14445000" />
       <workItem from="1509324517899" duration="1830000" />
-      <workItem from="1509329225026" duration="8202000" />
+      <workItem from="1509329225026" duration="10065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212533000" />
+    <option name="totallyTimeSpent" value="214396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
@@ -671,16 +711,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/docs/index.html" />
-    <entry file="file://$PROJECT_DIR$/order-cardTypeList.html" />
-    <entry file="file://$PROJECT_DIR$/js/content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="32" column="36" lean-forward="false" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news-lists.html" />
     <entry file="file://$PROJECT_DIR$/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="648">
@@ -1014,31 +1044,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order-buyidentity-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="98" column="20" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/order-receipt-detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="142" column="20" lean-forward="false" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="166" column="92" lean-forward="false" selection-start-line="166" selection-start-column="92" selection-end-line="166" selection-end-column="92" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1509346637000" expanded="true" signature="835:1099" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1062,6 +1072,58 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="181" column="15" lean-forward="false" selection-start-line="181" selection-start-column="15" selection-end-line="181" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outOrder-buyidentity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="151" column="120" lean-forward="false" selection-start-line="151" selection-start-column="120" selection-end-line="151" selection-end-column="120" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order-buyidentity-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="89" column="24" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="89" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outOrder-buyidentity-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="90" column="29" lean-forward="true" selection-start-line="90" selection-start-column="29" selection-end-line="90" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="170" column="86" lean-forward="false" selection-start-line="170" selection-start-column="86" selection-end-line="170" selection-end-column="86" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1509349971000" expanded="true" signature="835:1099" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outOrder-cash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="861">
+          <caret line="117" column="113" lean-forward="false" selection-start-line="117" selection-start-column="113" selection-end-line="117" selection-end-column="113" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outOrder-cash-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="85" column="24" lean-forward="false" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
           <folding />
         </state>
       </provider>
