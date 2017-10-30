@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 平台收款掉单</title>
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+    <div class="row wrapper border-bottom white-bg page-heading">
+        <div class="col-sm-6">
+            <ol class="breadcrumb">
+                <li>首页</li>
+                <li>掉单管理</li>
+                <li><strong>平台收款掉单</strong></li>
+            </ol>
+        </div>
+        <div class="col-sm-6">
+
+        </div>
+    </div>
+
+
+    <div class="wrapper wrapper-content">
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <form action="">
+                    <div class="form-inline">
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option selected="" value="按条件筛选">按条件筛选</option>
+                                <option value="按交易编号">按交易编号</option>
+                                <option value="按用户编号">按用户编号</option>
+                                <option value="按用户账号">按用户账号</option>
+                                <option value="按用户姓名">按用户姓名</option>
+                                <option value="按平台订单编号">按平台订单编号</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" value="" placeholder="请输入搜索关键字">
+                        </div>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static"> 支付通道</p>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option selected="" value="全部">全部</option>
+                                <option value="银行卡收款">银行卡收款</option>
+                                <option value="微信收款">微信收款</option>
+                                <option value="支付宝收款">支付宝收款</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+                    <div class="form-inline margin-top">
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="请选择时间">请选择时间</option>
+                                <option value="按下单时间筛选">按下单时间筛选</option>
+                                <option value="按到账时间筛选">按到账时间筛选</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-daterange input-group">
+                                <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                                <span class="input-group-addon">至</span>
+                                <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                            </div>
+                        </div>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static"> 用户身份</p>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="全部">全部</option>
+                                <option value="普通用户">普通用户</option>
+                                <option value="高级用户">高级用户</option>
+                                <option value="钻石用户">钻石用户</option>
+                                <option value="代理商">代理商</option>
+                            </select>
+                        </div>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static"> 收款类型</p>
+                        </div>
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option value="全部">全部</option>
+                                <option value="快速收款T0">快速收款T0</option>
+                                <option value="普通收款T1">普通收款T1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary no-margins">搜索</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-content">
+                <div class="example">
+                    <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+                        <a href="#" class="btn btn-primary btn-outline">
+                            导出EXCEL
+                        </a>
+                    </div>
+                    <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
+                        <thead>
+                            <tr>
+                                <th data-field="col-01" class="text-center">平台订单编号</th>
+                                <th data-field="col-02" class="text-center">交易编号</th>
+                                <th data-field="col-03" class="text-center">用户编号</th>
+                                <th data-field="col-04" class="text-center">用户账号</th>
+                                <th data-field="col-05" class="text-center">用户姓名</th>
+                                <th data-field="col-06" class="text-center">用户身份</th>
+                                <th data-field="col-07" class="text-center">用户下单时间</th>
+                                <th data-field="col-08" class="text-center">平台到账时间</th>
+                                <th data-field="col-09" class="text-center">费率%</th>
+                                <th data-field="col-10" class="text-center">手续费(元)</th>
+                                <th data-field="col-11" class="text-center">支付通道</th>
+                                <th data-field="col-12" class="text-center">单笔手续费(元)</th>
+                                <th data-field="col-13" class="text-center">收款类型</th>
+                                <th data-field="col-14" class="text-center">付款金额</th>
+                                <th data-field="col-15" class="text-center">到账金额</th>
+                                <th data-field="col-16" class="text-center">操作</th>
+                                <th data-field="col-17" class="text-center">日志</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>56465651226262</td>
+                                <td>843132135131</td>
+                                <td>532</td>
+                                <td>84512577894</td>
+                                <td>大牛</td>
+                                <td>普通用户</td>
+                                <td>2017-5-8<br>24:16:25</td>
+                                <td>2017-5-8<br>24:16:25</td>
+                                <td>0.48</td>
+                                <td>0.48</td>
+                                <td>银行卡收款</td>
+                                <td>2</td>
+                                <td>快速收款T0</td>
+                                <td>100</td>
+                                <td>99.52</td>
+                                <td>
+                                    <a class="btn btn-primary btn-sm pay-button">触发代付</a>
+                                    <a class="btn btn-danger btn-sm error-button">交易失败</a>
+                                    <a class="btn btn-primary btn-sm error-button J_menuItem" href="outOrder-receipt-detail.html">查看详情</a>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- 第三方插件 -->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Data picker -->
+    <script src="js/plugins/datetimepicker/datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/datetimepicker/datetimepicker.zh-CN.js" charset="UTF-8"></script>
+
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('#exampleTableToolbar').bootstrapTable({
+                showColumns: true,
+                toolbar: '#exampleToolbar',
+                iconSize: 'outline',
+                icons: {
+                    columns: 'glyphicon-list'
+                },
+                pagination:true,
+                sidePagination:'client',
+                pageNumber:1,
+                pageSize:30
+            });
+
+
+            $('.datetimepicker2').datetimepicker({
+                format: 'yyyy-mm-dd',
+                autoclose:true,
+                todayBtn:'linked',
+                language:'zh-CN',
+                minView:2
+            });
+
+            $('.pay-button').click(function () {
+                swal({
+                        title: "触发代付",
+                        text: "确定触发代付吗",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#23C6CA",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("触发成功", "代付触发成功", "success");
+                    });
+            });
+            $('.error-button').click(function () {
+                swal({
+                        title: "置为失败订单",
+                        text: "确定将此订单置为失败订单吗",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("操作成功", "订单置为失败订单", "success");
+                    });
+            });
+
+
+        });
+    </script>
+
+
+</body>
+
+</html>

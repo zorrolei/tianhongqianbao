@@ -5,10 +5,12 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>天宏钱包 - 订单交易详情</title>
+    <title>天宏钱包 - 代付掉单详情</title>
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css?v=4.1.0" rel="stylesheet">
     <style>
@@ -22,8 +24,8 @@
             <ol class="breadcrumb">
                 <li>首页</li>
                 <li>订单管理</li>
-                <li>收款订单</li>
-                <li><strong>订单交易详情</strong></li>
+                <li>平台代付掉单</li>
+                <li><strong>代付掉单详情</strong></li>
             </ol>
         </div>
         <div class="col-sm-6">
@@ -78,8 +80,8 @@
                         <tr>
                             <td>用户身份</td>
                             <td>普通会员</td>
-                            <td>用户到账时间</td>
-                            <td>2017-6-8 24:58:31</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
                             <td>用户下单时间</td>
@@ -105,16 +107,10 @@
                             <td>68416516516615</td>
                         </tr>
                         <tr>
-                            <td>交易状态</td>
-                            <td>交易成功</td>
+                            <td>收款类型</td>
+                            <td>快速收款（T0）</td>
                             <td>付款信用卡银行</td>
                             <td>招商银行</td>
-                        </tr>
-                        <tr>
-                            <td>收款类型</td>
-                            <td>快速收款（T0</td>
-                            <td></td>
-                            <td></td>
                         </tr>
                         <tr>
                             <td>手续费</td>
@@ -136,7 +132,14 @@
                         </tr>
                         <tr>
                             <td>错误日志</td>
-                            <td colspan="3">无</td>
+                            <td colspan="3">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+                        </tr>
+                        <tr class='hidden-print'>
+                            <td>错误处理</td>
+                            <td colspan="3">
+                                <a class="btn btn-primary btn-sm pay-button">交易成功</a>
+                                <a class="btn btn-danger btn-sm error-button">交易失败</a>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -156,6 +159,46 @@
     <script src="js/contabs-sub.js"></script>
     <!-- 第三方插件 -->
     <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+
+            $('.pay-button').click(function () {
+                swal({
+                        title: "置为成功订单",
+                        text: "确定将此订单置为成功订单吗",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#23C6CA",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("操作成功", "订单置为成功订单", "success");
+                    });
+            });
+            $('.error-button').click(function () {
+                swal({
+                        title: "置为失败订单",
+                        text: "确定将此订单置为失败订单吗",
+                        type: "warning",
+                        showCancelButton: true,
+                        cancelButtonText: "取消",
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "确定",
+                        closeOnConfirm: false
+                    },
+                    function(){
+                        swal("操作成功", "订单置为失败订单", "success");
+                    });
+            });
+
+
+        });
+    </script>
 
 
 
