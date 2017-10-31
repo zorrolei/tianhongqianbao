@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>天宏钱包 - 购买身份佣金明细</title>
+    <title>天宏钱包 - 用户余额变动明细</title>
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
@@ -25,7 +25,7 @@
             <ol class="breadcrumb">
                 <li>首页</li>
                 <li>资金管理</li>
-                <li><strong>购买身份佣金明细</strong></li>
+                <li><strong>用户余额变动明细</strong></li>
             </ol>
         </div>
         <div class="col-sm-6">
@@ -41,37 +41,35 @@
                     <div class="form-inline">
                         <div class="form-group">
                             <select name="" id="" class="form-control">
-                                <option value="按条件查找">按条件查找</option>
+                                <option value="请选择用户查询条件">请选择用户查询条件</option>
                                 <option value="按用户编号">按用户编号</option>
                                 <option value="按用户账号">按用户账号</option>
-                                <option value="按用户姓名">按用户姓名</option>
-                                <option value="按直属上级账号">按直属上级账号</option>
-                                <option value="按直属上级姓名">按直属上级姓名</option>
-                                <option value="按所属代理商账号">按所属代理商账号</option>
-                                <option value="按所属代理商姓名">按所属代理商姓名</option>
+                                <option value="按用户名称">按用户名称</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <input type="text" class="form-control" value="" placeholder="请输入搜索关键字">
                         </div>
-                        <div class="form-group">
-                            <p class="form-control-static">付款方式</p>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static">用户身份</p>
                         </div>
                         <div class="form-group">
                             <select name="" id="" class="form-control">
-                                <option value="全部">全部</option>
-                                <option value="支付宝">支付宝</option>
-                                <option value="微信">微信</option>
+                                <option value="全部 ">全部 </option>
+                                <option value="普通用户">普通用户</option>
+                                <option value="高级用户">高级用户</option>
+                                <option value="钻石用户">钻石用户</option>
+                                <option value="代理商">代理商</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <p class="form-control-static">用户来源</p>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static">收支类型</p>
                         </div>
                         <div class="form-group">
                             <select name="" id="" class="form-control">
                                 <option value="全部">全部</option>
-                                <option value="直推">直推</option>
-                                <option value="代理">代理</option>
+                                <option value="收入">收入</option>
+                                <option value="支出">支出</option>
                             </select>
                         </div>
                     </div>
@@ -86,26 +84,29 @@
                                 <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
                             </div>
                         </div>
-                        <div class="form-group">
-                            <p class="form-control-static">购买类型</p>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static">用户来源</p>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group margin-left">
                             <select name="" id="" class="form-control">
-                                <option value="购买前">购买前</option>
-                                <option value="普通用户">普通用户</option>
-                                <option value="高级用户">高级用户</option>
+                                <option value="全部">全部</option>
+                                <option value="直推">直推</option>
+                                <option value="代理">代理</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <p class="form-control-static">至</p>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static">变动类型</p>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group margin-left">
                             <select name="" id="" class="form-control">
-                                <option value="购买后">购买后</option>
-                                <option value="高级用户">高级用户</option>
-                                <option value="钻石用户">钻石用户</option>
+                                <option value="全部">全部</option>
+                                <option value="快速收款流水分拥">快速收款流水分拥</option>
+                                <option value="普通收款流水分佣">普通收款流水分佣</option>
+                                <option value="购买身份分拥">购买身份分拥</option>
+                                <option value="账户提现">账户提现</option>
                             </select>
                         </div>
+
                         <div class="form-group">
                             <button class="btn btn-primary no-margins">搜索</button>
                         </div>
@@ -128,38 +129,32 @@
                             <tr>
                                 <th data-field="col-01" class="text-center">用户编号</th>
                                 <th data-field="col-02" class="text-center">用户账号</th>
-                                <th data-field="col-03" class="text-center">用户姓名</th>
-                                <th data-field="col-04" class="text-center">交易时间</th>
-                                <th data-field="col-05" class="text-center">付款方式</th>
-                                <th data-field="col-06" class="text-center">直属上级账号</th>
-                                <th data-field="col-07" class="text-center">直属上级姓名</th>
-                                <th data-field="col-08" class="text-center">直属上级分拥（元）</th>
-                                <th data-field="col-09" class="text-center">所属代理商账号</th>
-                                <th data-field="col-10" class="text-center">所属代理商姓名</th>
-                                <th data-field="col-11" class="text-center">所属代理商分拥（元）</th>
-                                <th data-field="col-12" class="text-center">购买前身份</th>
-                                <th data-field="col-13" class="text-center">购买后身份</th>
-                                <th data-field="col-14" class="text-center">用户来源</th>
-                                <th data-field="col-15" class="text-center">交易金额（元）</th>
+                                <th data-field="col-03" class="text-center">用户名称</th>
+                                <th data-field="col-04" class="text-center">用户身份</th>
+                                <th data-field="col-05" class="text-center">用户来源</th>
+                                <th data-field="col-06" class="text-center">变动类型</th>
+                                <th data-field="col-07" class="text-center">收支类型</th>
+                                <th data-field="col-08" class="text-center">变动前账户余额（元）</th>
+                                <th data-field="col-09" class="text-center">变动金额（元）</th>
+                                <th data-field="col-10" class="text-center">变动后账户余额（元）</th>
+                                <th data-field="col-11" class="text-center">日志</th>
+                                <th data-field="col-12" class="text-center">资金变动时间</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>001</td>
-                                <td>49841531311</td>
+                                <td>8465</td>
+                                <td>48531231</td>
                                 <td>大牛</td>
-                                <td>2017-5-8<br>24:16:25</td>
-                                <td>微信</td>
-                                <td>65135131</td>
-                                <td>小牛</td>
-                                <td>34.3</td>
-                                <td>25198456132</td>
-                                <td>一只牛</td>
-                                <td>63.7</td>
                                 <td>普通用户</td>
-                                <td>高级用户</td>
                                 <td>直推</td>
-                                <td>98</td>
+                                <td>快速收款流水分拥</td>
+                                <td>收入</td>
+                                <td>1000.00</td>
+                                <td>900.00</td>
+                                <td>5000.00</td>
+                                <td></td>
+                                <td>2017-08-06 24:54:16</td>
                             </tr>
 
                         </tbody>
@@ -167,9 +162,9 @@
                     <table class="table">
                         <tr>
                             <td>合计</td>
-                            <td>直属上级分拥（元）:<br>1341234</td>
-                            <td>所属代理商分拥（元）:<br>12341234</td>
-                            <td>交易金额（元）:<br>214234</td>
+                            <td>变动前账户余额（元）<br>1341234</td>
+                            <td>变动金额（元）<br>12341234</td>
+                            <td>变动后账户余额（元）<br>214234</td>
                         </tr>
                     </table>
                 </div>
