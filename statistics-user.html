@@ -5,13 +5,12 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>天宏钱包 - 首页</title>
+    <title>天宏钱包 - 用户统计</title>
 
     <link rel="shortcut icon" href="favicon.ico">
     <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
 
-    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
 
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css?v=4.1.0" rel="stylesheet">
@@ -21,70 +20,47 @@
 <body class="gray-bg">
     <div class="wrapper wrapper-content">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <div class="ibox float-e-margins">
                     <div class="ibox-title">
                         <h5>今日新增用户</h5>
                     </div>
                     <div class="ibox-content">
-                        <h1 class="no-margins">10000</h1>
-                        <small class="text-info">人</small>
+                        <h2 class="no-margins">275,800人</h2>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="ibox float-e-margins">
                     <div class="ibox-title">
-                        <h5>今日普通收款T1(元)</h5>
+                        <h5>全部用户</h5>
                     </div>
                     <div class="ibox-content">
-                        <h1 class="no-margins">275,800</h1>
-                        <small class="text-info">2000笔</small>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>今日快速收款T0(元)</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <h1 class="no-margins">275,800</h1>
-                        <small class="text-info">2000笔</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>佣金账户总余额</h5>
-                    </div>
-                    <div class="ibox-content">
-                        <h1 class="no-margins">275,800.00</h1>
-                        <small class="text-info">元</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="ibox float-e-margins">
-                    <div class="ibox-title">
-                        <h5>用户流水分布图</h5>
-                        <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
+                        <div class="row">
+                            <div class="col-sm-4">普通用户:100</div>
+                            <div class="col-sm-4">高级用户:100</div>
+                            <div class="col-sm-4">钻石用户:100</div>
+                            <div class="col-sm-4">代理商:1</div>
+                            <div class="col-sm-4">公司用户:100</div>
                         </div>
                     </div>
+                    <div class="ibox-title">
+                        <h5>总计</h5>
+                    </div>
                     <div class="ibox-content">
-                        <div style="height:600px" id="echarts-map-chart"></div>
+                        <h2 class="no-margins">3000000人</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5>七日商户增长趋势图</h5>
+                    </div>
+                    <div class="ibox-content" style="height: 292px;">
+                        <div class="echarts" id="echarts-line-chart"></div>
                     </div>
                 </div>
             </div>
         </div>
+
+
 
         <div class="row">
             <div class="col-sm-12">
@@ -93,86 +69,98 @@
                         <h5>代理商排行榜（月）</h5>
                     </div>
                     <div class="ibox-content">
-                        <table  class="table text-center table-hover table-bordered">
+                        <table class="text-center table table-hover table-bordered">
                             <thead>
                                 <tr>
                                     <th class="text-center">排行</th>
-                                    <th class="text-center">编号</th>
-                                    <th class="text-center">姓名</th>
-                                    <th class="text-center">账号</th>
-                                    <th class="text-center">旗下付款总流水</th>
+                                    <th class="text-center">用户编号</th>
+                                    <th class="text-center">用户姓名</th>
+                                    <th class="text-center">用户账号</th>
+                                    <th class="text-center">用户身份</th>
+                                    <th class="text-center">旗下认证用户数</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>3</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>4</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
+
                                 <tr>
                                     <td>5</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>6</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>7</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>8</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>9</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>10</td>
-                                    <td>98456394</td>
+                                    <td>001</td>
                                     <td>张三</td>
-                                    <td>13948756985</td>
-                                    <td>1150</td>
+                                    <td>8456132845</td>
+                                    <td>钻石用户</td>
+                                    <td>100</td>
                                 </tr>
 
 
@@ -196,10 +184,10 @@
     <script src="js/contabs-sub.js"></script>
 
 
-    <!-- ECharts -->
+     <!--ECharts -->
     <script src="js/plugins/echarts/echarts-all.js"></script>
     <!-- ECharts demo data -->
-    <script src="js/demo/echarts-demo.js"></script>
+    <script src="js/demo/echarts-demo2.js"></script>
 
 
 
