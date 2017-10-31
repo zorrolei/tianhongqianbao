@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>天宏钱包 - 身份购买掉单</title>
+    <title>天宏钱包 - 提现申请</title>
 
     <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
     <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
@@ -24,8 +24,8 @@
         <div class="col-sm-6">
             <ol class="breadcrumb">
                 <li>首页</li>
-                <li>掉单管理</li>
-                <li><strong>身份购买掉单</strong></li>
+                <li>资金管理</li>
+                <li><strong>提现申请</strong></li>
             </ol>
         </div>
         <div class="col-sm-6">
@@ -41,36 +41,39 @@
                     <div class="form-inline">
                         <div class="form-group">
                             <select name="" id="" class="form-control">
-                                <option selected="" value="按条件筛选">按条件筛选</option>
-                                <option value="按交易编号">按交易编号</option>
+                                <option selected="" value="请选择查询条件">请选择查询条件</option>
                                 <option value="按用户编号">按用户编号</option>
-                                <option value="按用户账号">按用户账号</option>
                                 <option value="按用户姓名">按用户姓名</option>
+                                <option value="按用户账号">按用户账号</option>
                                 <option value="按平台订单编号">按平台订单编号</option>
+                                <option value="按提现交易编号">按提现交易编号</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" value="" placeholder="请输入搜索关键字">
-                        </div>
-                        <div class="form-group margin-left">
-                            <p class="form-control-static"> 付款方式</p>
-                        </div>
-                        <div class="form-group">
-                            <select name="" id="" class="form-control">
-                                <option value="全部">全部</option>
-                                <option value="支付宝">支付宝</option>
-                                <option value="微信">微信</option>
-                            </select>
-                        </div>
-
-
-                    </div>
-                    <div class="form-inline margin-top">
                         <div class="form-group">
                             <select name="" id="" class="form-control">
                                 <option value="请选择时间">请选择时间</option>
                                 <option value="按下单时间筛选">按下单时间筛选</option>
                                 <option value="按到账时间筛选">按到账时间筛选</option>
+                            </select>
+                        </div>
+                        <div class="form-group margin-left">
+                            <p class="form-control-static">提现状态</p>
+                            <select name="" id="" class="form-control">
+                                <option value="待审核">待审核</option>
+                                <option value="已驳回">已驳回</option>
+                                <option value="处理中">处理中</option>
+                                <option value="已到账">已到账</option>
+                                <option value="提现失败">提现失败</option>
+                                <option selected="" value="全部">全部</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-inline margin-top">
+                        <div class="form-group">
+                            <select name="" id="" class="form-control">
+                                <option selected="" value="请选择时间查询条件">请选择时间查询条件</option>
+                                <option value="按申请时间查询">按申请时间查询</option>
+                                <option value="按到账时间查询">按到账时间查询</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -80,31 +83,11 @@
                                 <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
                             </div>
                         </div>
-                        <div class="form-group margin-left">
-                            <p class="form-control-static"> 购买类型</p>
-                        </div>
-                        <div class="form-group">
-                            <select name="" id="" class="form-control">
-                                <option value="购买前">购买前</option>
-                                <option value="普通用户">普通用户</option>
-                                <option value="高级用户">高级用户</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <p class="form-control-static">至</p>
-                        </div>
-                        <div class="form-group">
-                            <select name="" id="" class="form-control">
-                                <option value="购买后">购买后</option>
-                                <option value="高级用户">高级用户</option>
-                                <option value="钻石用户">钻石用户</option>
-                            </select>
-                        </div>
-
                         <div class="form-group">
                             <button class="btn btn-primary no-margins">搜索</button>
                         </div>
                     </div>
+
                 </form>
             </div>
         </div>
@@ -121,41 +104,85 @@
                         <thead>
                             <tr>
                                 <th data-field="col-01" class="text-center">平台订单编号</th>
-                                <th data-field="col-02" class="text-center">交易编号</th>
+                                <th data-field="col-02" class="text-center">提现交易编号</th>
                                 <th data-field="col-03" class="text-center">用户编号</th>
-                                <th data-field="col-04" class="text-center">用户账号</th>
-                                <th data-field="col-05" class="text-center">用户姓名</th>
-                                <th data-field="col-06" class="text-center">下单时间</th>
-                                <th data-field="col-07" class="text-center">付款方式</th>
-                                <th data-field="col-08" class="text-center">购买前身份</th>
-                                <th data-field="col-09" class="text-center">购买后身份</th>
-                                <th data-field="col-10" class="text-center">交易金额（元）</th>
-                                <th data-field="col-11" class="text-center">操作</th>
-                                <th data-field="col-12" class="text-center">日志</th>
+                                <th data-field="col-04" class="text-center">用户姓名</th>
+                                <th data-field="col-05" class="text-center">用户账号</th>
+                                <th data-field="col-06" class="text-center">用户身份</th>
+                                <th data-field="col-07" class="text-center">申请提现时间</th>
+                                <th data-field="col-08" class="text-center">提现到账时间</th>
+                                <th data-field="col-09" class="text-center">费率%</th>
+                                <th data-field="col-10" class="text-center">手续费（元）</th>
+                                <th data-field="col-11" class="text-center">提现金额（元）</th>
+                                <th data-field="col-12" class="text-center">到账金额（元）</th>
+                                <th data-field="col-13" class="text-center">提现状态</th>
+                                <th data-field="col-14" class="text-center">操作</th>
+                                <th data-field="col-15" class="text-center">日志</th>
+                                <th data-field="col-16" class="text-center">操作人账号</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>56465651226262</td>
                                 <td>843132135131</td>
-                                <td>532</td>
                                 <td>84512577894</td>
                                 <td>大牛</td>
-                                <td>2017-5-8<br>24:16:25</td>
-                                <td>微信</td>
+                                <td>18500355354</td>
                                 <td>普通用户</td>
-                                <td>高级用户</td>
-                                <td>98</td>
+                                <td>2017-5-8<br>24:16:25</td>
+                                <td>2017-5-8<br>24:16:25</td>
+                                <td>0.6</td>
+                                <td>6</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>待审核</td>
                                 <td>
-                                    <a class="btn btn-primary btn-sm pay-button">交易成功</a>
-                                    <a class="btn btn-danger btn-sm error-button">交易失败</a>
-                                    <a class="btn btn-primary btn-sm J_menuItem" href="outOrder-buyidentity-detail.html">查看详情</a>
+                                    <a class="btn btn-primary btn-sm success-button">同意</a>
+                                    <a class="btn btn-danger btn-sm error-button" data-toggle="modal" data-target="#myModal5">驳回</a>
                                 </td>
                                 <td></td>
+                                <td>管理员001</td>
+                            </tr>
+                            <tr>
+                                <td>56465651226262</td>
+                                <td>843132135131</td>
+                                <td>84512577894</td>
+                                <td>大牛</td>
+                                <td>18500355354</td>
+                                <td>普通用户</td>
+                                <td>2017-5-8<br>24:16:25</td>
+                                <td>2017-5-8<br>24:16:25</td>
+                                <td>0.6</td>
+                                <td>6</td>
+                                <td>100</td>
+                                <td>94</td>
+                                <td>交易成功</td>
+                                <td>
+                                    <a class="btn btn-primary btn-sm J_menuItem" href="funds-cash-detail.html">查看详情</a>
+                                </td>
+                                <td></td>
+                                <td>管理员001</td>
                             </tr>
 
                         </tbody>
                     </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--弹窗-->
+    <div class="modal inmodal" id="myModal5" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">驳回申请</h4>
+                </div>
+                <div class="modal-body">
+                    <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="驳回理由"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><button class="btn btn-primary" style="width:40%">确定</button></div>
                 </div>
             </div>
         </div>
@@ -205,10 +232,10 @@
                 minView:2
             });
 
-            $('.pay-button').click(function () {
+            $('.success-button').click(function () {
                 swal({
-                        title: "置为成功订单",
-                        text: "确定将此订单置为成功订单吗",
+                        title: "同意提现",
+                        text: "确定同意这条提现申请",
                         type: "warning",
                         showCancelButton: true,
                         cancelButtonText: "取消",
@@ -217,24 +244,10 @@
                         closeOnConfirm: false
                     },
                     function(){
-                        swal("操作成功", "订单置为成功订单", "success");
+                        swal("操作成功", "提现确认成功", "success");
                     });
             });
-            $('.error-button').click(function () {
-                swal({
-                        title: "置为失败订单",
-                        text: "确定将此订单置为失败订单吗",
-                        type: "warning",
-                        showCancelButton: true,
-                        cancelButtonText: "取消",
-                        confirmButtonColor: "#DD6B55",
-                        confirmButtonText: "确定",
-                        closeOnConfirm: false
-                    },
-                    function(){
-                        swal("操作成功", "订单置为失败订单", "success");
-                    });
-            });
+
 
 
         });
