@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天宏钱包 - 收款交易统计</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+    <!--datapicker-->
+    <link href="css/plugins/datetimepicker/datetimepicker.min.css" rel="stylesheet">
+    <link href="css/plugins/bootstrap-table/bootstrap-table.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-sm-6">
+        <ol class="breadcrumb">
+            <li>首页</li>
+            <li>统计数据</li>
+            <li><strong>收款交易统计</strong></li>
+        </ol>
+    </div>
+    <div class="col-sm-6">
+
+    </div>
+</div>
+    <div class="wrapper wrapper-content">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1" aria-expanded="true">平台日交易流水统计</a>
+                        </li>
+                        <li class=""><a data-toggle="tab" href="#tab-2" aria-expanded="false">用户日交易流水统计</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="panel-body">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <p class="form-control-static">按时间筛选</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-daterange input-group">
+                                            <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                                            <span class="input-group-addon">至</span>
+                                            <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary no-margins">搜索</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="example" style="margin-top: 20px;">
+                                    <div class="hidden-xs" id="exampleToolbar" role="group">
+                                        <a href="#" class="btn btn-primary btn-outline">
+                                            导出EXCEL
+                                        </a>
+                                    </div>
+                                    <table id="exampleTableToolbar" data-mobile-responsive="true" class="text-center table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th data-field="col-01" class="text-center">日期</th>
+                                                <th data-field="col-02" class="text-center">当日快速收款交易金额（T0元）</th>
+                                                <th data-field="col-03" class="text-center">当日普通收款交易金额（T1元）</th>
+                                                <th data-field="col-04" class="text-center">当日快速收款交易次数（笔）</th>
+                                                <th data-field="col-05" class="text-center">当日普通收款交易次数（笔）</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2017-8-9</td>
+                                                <td>6000</td>
+                                                <td>9000</td>
+                                                <td>5000</td>
+                                                <td>4000</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tr>
+                                            <td>合计</td>
+                                            <td>当日快速收款交易金额（T0元）<br>1341234</td>
+                                            <td>当日普通收款交易金额（T1元）<br>12341234</td>
+                                            <td>当日快速收款交易次数（笔）<br>214234</td>
+                                            <td>当日普通收款交易次数（笔）<br>214234</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane">
+                            <div class="panel-body">
+                                <div class="form-inline">
+                                    <div class="form-group">
+                                        <p class="form-control-static">选择时间段</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-daterange input-group">
+                                            <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                                            <span class="input-group-addon">至</span>
+                                            <input type="text" class="form-control datetimepicker2" value="" placeholder="请选择日期" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <p class="form-control-static">及</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="" id="" class="form-control">
+                                            <option value="选择条件查询">选择条件查询</option>
+                                            <option value="选择用户编号">选择用户编号</option>
+                                            <option value="选择用户账号">选择用户账号</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value="" placeholder="请输入搜索关键字">
+                                    </div>
+                                </div>
+                                <div class="form-inline margin-top">
+                                    <div class="form-group">
+                                        <p class="form-control-static">交易时间</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value="" placeholder="请输入搜索关键字">
+                                    </div>
+                                    <div class="form-group margin-left">
+                                        <p class="form-control-static">交易类型</p>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name="" id="" class="form-control">
+                                            <option value="全部">全部</option>
+                                            <option value="快速收款（T0）">快速收款（T0）</option>
+                                            <option value="普通收款（T1）">普通收款（T1）</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-primary no-margins">搜索</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="example" style="margin-top: 20px;">
+                                    <div class="hidden-xs" id="exampleToolbar2" role="group">
+                                        <a href="#" class="btn btn-primary btn-outline">
+                                            导出EXCEL
+                                        </a>
+                                    </div>
+                                    <table id="exampleTableToolbar2" data-mobile-responsive="true" class="text-center table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th data-field="col-01" class="text-center">用户编号</th>
+                                                <th data-field="col-02" class="text-center">用户账号</th>
+                                                <th data-field="col-03" class="text-center">用户姓名</th>
+                                                <th data-field="col-04" class="text-center">用户身份</th>
+                                                <th data-field="col-05" class="text-center">统计时间</th>
+                                                <th data-field="col-06" class="text-center">交易类型</th>
+                                                <th data-field="col-07" class="text-center">当日交易金额（元）</th>
+                                                <th data-field="col-08" class="text-center">当日交易次数  （笔）</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>001</td>
+                                                <td>851385</td>
+                                                <td>大牛</td>
+                                                <td>普通用户</td>
+                                                <td>2017-2-5</td>
+                                                <td>快速收款（T0）</td>
+                                                <td>6000</td>
+                                                <td>9</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <table class="table">
+                                        <tr>
+                                            <td>合计</td>
+                                            <td>当日交易金额（元）<br>1341234</td>
+                                            <td>当日交易次数  （笔）<br>12341234</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 全局js -->
+    <script src="js/jquery.min.js?v=2.1.4"></script>
+    <script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+
+    <!-- 自定义js -->
+    <script src="js/content.js?v=1.0.0"></script>
+    <script src="js/contabs-sub.js"></script>
+    <!-- Data picker -->
+    <script src="js/plugins/datetimepicker/datetimepicker.min.js"></script>
+    <script type="text/javascript" src="js/plugins/datetimepicker/datetimepicker.zh-CN.js" charset="UTF-8"></script>
+    <!-- Bootstrap table -->
+    <script src="js/plugins/bootstrap-table/bootstrap-table.min.js"></script>
+    <script src="js/plugins/bootstrap-table/bootstrap-table-mobile.min.js"></script>
+    <script src="js/plugins/bootstrap-table/locale/bootstrap-table-CN.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#exampleTableToolbar').bootstrapTable({
+            showColumns: true,
+            toolbar: '#exampleToolbar',
+            iconSize: 'outline',
+            icons: {
+                columns: 'glyphicon-list'
+            },
+            pagination:true,
+            sidePagination:'client',
+            pageNumber:1,
+            pageSize:30
+        });
+        $('#exampleTableToolbar2').bootstrapTable({
+            showColumns: true,
+            toolbar: '#exampleToolbar2',
+            iconSize: 'outline',
+            icons: {
+                columns: 'glyphicon-list'
+            },
+            pagination:true,
+            sidePagination:'client',
+            pageNumber:1,
+            pageSize:30
+        });
+
+
+        $('.datetimepicker2').datetimepicker({
+            format: 'yyyy-mm-dd',
+            autoclose:true,
+            todayBtn:'linked',
+            language:'zh-CN',
+            minView:2
+        });
+
+
+
+
+    });
+</script>
+
+
+
+</body>
+
+</html>
