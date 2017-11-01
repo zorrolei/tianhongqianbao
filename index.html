@@ -154,7 +154,7 @@
                             <h4 class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <i class="fa fa-warning"></i>
-                                    <span class="nav-label">掉单处理</span>
+                                    <span class="nav-label">掉单管理</span>
                                     <span class="fa fa-angle-right"></span>
                                 </a>
                             </h4>
@@ -240,7 +240,7 @@
                             </a>
                             <ul class="dropdown-menu dropdown-alerts">
                                 <li>
-                                    <a href="#">
+                                    <a href="#" data-toggle="modal" data-target="#myModal4">
                                         <div>
                                             修改登录密码
                                         </div>
@@ -310,6 +310,43 @@
         </div>
         <!--右侧部分结束-->
 
+    </div>
+
+    <!--修改登录密码弹窗-->
+    <div class="modal inmodal" id="myModal4" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">修改登录密码</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">原密码</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入新密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">新密码</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="请输入新密码">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">重复新密码</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="请再次输入新密码">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="text-center"><button type="button" class="btn btn-primary btn-lg" style="width: 60%;">确定</button></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- 全局js -->
